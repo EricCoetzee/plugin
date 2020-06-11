@@ -1,0 +1,138 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+} */
+/* body {
+	font-family:Helvetica, Arial, sans-serif;
+	margin:0;
+	padding:0;
+	font-size:100%;
+	background-color: #f1f1f1;
+} */
+.wrapper{
+    width: 1170px;
+    margin: 5px auto;
+}
+.wrapper > nav{
+    position: absolute;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+nav > ul{
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+}
+nav a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li{
+    color: #fff;
+     list-style: none; 
+    transition: 0.5s;
+}
+
+ul img{
+    width: 40%;
+}
+
+nav > ul > li > a{
+    padding: 15px 8px;
+}
+
+nav ul > li.dropdown > a::after{
+    position: relative;
+    float: right;
+    content: '';
+    margin-left: 10px;
+    margin-top: 8px;
+}
+nav > ul > li{
+    background-color: #262626;
+    margin: 1px;
+    border-radius: 8px;
+}
+nav > ul > li:hover{
+    background-color: #668fc5;
+}
+
+nav ul.mega-area{
+    padding: 20px 20px 0 20px;
+    background-color: #fff;
+    text-align: left;
+    border-top: 5px solid #164c82;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    position: absolute;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1170px;
+    top:-9999px;
+    left: 0;
+}
+nav ul li:hover ul.mega-area{
+    top: 100%;
+}
+
+nav ul.mega-area ul{
+    width: 21%;
+    margin-bottom: 40px;
+    color: #262626;
+}
+
+nav ul.mega-area h4{
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+nav ul.mega-area ul li{
+    display: block;
+}
+
+nav ul.mega-area ul li a{
+    margin-top: 10px;
+    color: #000;
+    text-transform: none;
+}
+
+nav ul.mega-area ul li a:hover{
+    color: #164c82;
+}
+
+
+
+
+
+
+
+.slicknav_menu {
+	display:none;
+}
+
+@media screen and (max-width: 40em) {
+	.js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+}
